@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="panel panel-primary ">
+    <div class="panel-heading ">
+        <h4>Crear Producto</h4>
+    </div>
+    <div class="panel-body">
+        <form action="@Url.Action("Crear","Mantenedor")" method="post">
+            <div class="form-group">
+                <label>Nombre</label>
+                <input class="form-control" type="text" name="Nombre" />
+            </div>
+            <div class="form-group">
+                <label>Precio</label>
+                <input class="form-control" type="text" name="Precio" />
+            </div>
+            <div class="form-group">
+                <label>Descripcion</label>
+                <input class="form-control" type="text" name="Descripcion" />
+            </div>
+            <div class="form-group">
+                <label>Categoria</label>
+                <input class="form-control" type="text" name="Categoria" />
+            </div>
+            <div class="form-group">
+                <label>Marca</label>
+                <input class="form-control" type="text" name="Marca" />
+            </div>
+            <hr />
+            <button type="submit" class="btn btn-primary"> Registrar </button>
+            <a></a>
+        </form>
+
+    </div>
+</div>
+
+
+
